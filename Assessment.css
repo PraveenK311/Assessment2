@@ -108,3 +108,11 @@
         .show {
             display: block;
         }
+        
+        #list img {
+            max-width: 300px;
+        }
+        
+        #deleteImgs {
+            display: none;
+        }
