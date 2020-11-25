@@ -1,0 +1,110 @@
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        html,
+        body {
+            /* background-color: blue; */
+        }
+        
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-areas: "leftside  NewsArticles" "NewsArticles  totalArticles" "totalArticles  rightside";
+            align-items: start;
+        }
+        
+        .titleh1 {
+            display: grid;
+            color: #c5d32c;
+            justify-content: center;
+        }
+        
+        .leftside {
+            display: grid;
+            color: #d32c8d;
+            justify-content: left;
+        }
+        
+        .NewsArticles {
+            display: grid;
+            color: #d32c8d;
+            justify-content: center;
+        }
+        
+        .totalArticles {
+            display: grid;
+            color: #d32c8d;
+            justify-content: right;
+        }
+        
+        .rightside {
+            display: grid;
+            color: #d32c8d;
+            justify-content: right;
+        }
+        /* .h2,
+        h3 {
+         
+        }
+         */
+        
+        .h2 {
+            display: grid;
+            border: 5px;
+            border-radius: 2px;
+            color: #d32c8d;
+            justify-content: right;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+        }
+        
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #2980B9;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+        
+        .show {
+            display: block;
+        }

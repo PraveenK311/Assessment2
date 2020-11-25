@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Assessment 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assessment.css">
+
+</head>
+
+<body>
+    <div class="titleh1">
+        <h1>Articles and fun</h1>
+    </div>
+    <div class="wrapper">
+        <!-- Title website Name -->
+
+
+        <!-- Left Side Part Both Articles content and Drop down  -->
+        <div class="leftside">
+            <h3>fun and News Articles</h3><br>
+            <h4>fun and News Articles</h4> <br>
+            <img src="http://lorempixel.com/400/200/people/2/" alt="image"><br>
+            <img src="http://lorempixel.com/400/200/people/3/" alt="image"><br>
+
+            <!-- Dropdown content -->
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+
+                    <a href="http://lorempixel.com/300/300/">Fun Articles</a><br>
+                    <a href="http://lorempixel.com/200/200/people/8/">Fun Articles</a><br>
+
+                </div>
+
+            </div>
+
+        </div>
+        <br><br><br>
+        <!-- center Part News Articles  -->
+        <div class="NewsArticles">
+            <h3> News Articles</h3><br>
+            <h4>Title: News Articles Images </h4><br>
+            <h5>content</h5><br>
+            <img src="http://lorempixel.com/400/200/" alt="lorempixel Images"><br> <br>
+            <img src="http://lorempixel.com/400/200/people/5/" alt="lorempixel Images"><br> <br>
+
+        </div>
+        <br><br><br>
+
+        <!-- Right Side Top Total no of articles  -->
+        <!-- <div class="totalArticles">
+           
+        </div> -->
+
+        <!-- Right Side Part Fun Articles -->
+        <div class="rightside">
+            <h2>Number Of News Articles:2 </h2><br>
+            <h2>Number Of Fun Articles:2</h2><br>
+            <h3> Fun Articles</h3><br>
+            <h4>Title:Fun Articles Images </h4><br>
+            <h5>content</h5><br>
+            <img src="http://lorempixel.com/400/200/people/6/" alt="lorempixel Images"><br> <br>
+            <img src="http://lorempixel.com/400/200/people/7/" alt="lorempixel Images"><br> <br>
+        </div>
+
+    </div>
+    <br><br><br>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="Assessment.js">
+    </script>
+</body>
+
+</html>
